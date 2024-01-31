@@ -1,0 +1,453 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@500&family=Homemade+Apple&family=Major+Mono+Display&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Lilita+One&family=Rubik+Doodle+Shadow&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-image:url(./wepageBG1.jpeg) ;
+    background-size: cover;
+    overflow-x: hidden;
+}
+#background{
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+    background-position: 2500px;
+    background-size: 2500px;
+}
+header{
+    height: 10%;
+    width: 100%;
+    display: flex;   
+    align-items: center;
+    background-color: black;
+    position: fixed;
+}
+#topHeader{
+    height: 10vh;
+    width: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: monospace;
+    color: white;
+    letter-spacing: 2px;
+}
+a:hover{
+    color: red;
+    cursor: pointer;
+}
+i{
+    margin-right: 5px;
+}
+#left{
+   height: 90%;
+   width: 50%;
+   background-color: transparent;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+#leftSub{
+    height: 25vh;
+    width: 30vw;
+    background-color:transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#name{
+    font-size: 40px;
+    color: black;
+    font-family: "Major Mono Display", monospace;
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+#webDev{
+    font-size: 20px;
+    font-family: monospace;
+    letter-spacing: 4px;
+    color: red;
+    margin-top: 3px;
+}
+#right{
+    height: 90%;
+    width: 50%;
+    background-color: transparent;
+    margin-top: -44.9%;
+    margin-left: 50%;
+    display: flex;
+    align-items: center;
+}
+#myPhoto{
+    height: 55vh;
+    width: 30vw;
+    background-image: url(./MyPhoto.jpeg);
+    background-size: cover;
+    /* border-radius: 51% 49% 70% 30% / 30% 56% 44% 70%  ; */
+    margin-left: 20px;
+    border-radius: 0px 20px 0px 20px;
+    background-size: cover;
+    box-shadow: 2px 2px 2px black;
+}
+/* .images{
+
+    height: 55vh;
+    width: 30vw;
+    position: absolute;
+    border-radius: 0px 20px 0px 20px;
+    background-size: cover;
+    
+} */
+#aboutMe{
+    height: 100vh;
+    width: 100vw;
+    /* background-color:whitesmoke; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#aboutMeContent{
+    height: 90%;
+    width: 90%;
+    background-color: transparent;
+}
+#aboutMeContentTop{
+    height: 10%;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+#aboutMeHead{
+    font-size: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 2px;
+    margin-left: 20px;
+    color: black;
+    
+}
+#aboutMeContentBottom{
+    height: 90%;
+    width: 100%;
+    background-color: transparent;
+    color: black;
+}
+#myDetails{
+    height: 40vh;
+    width: 35vw;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 12px;
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 1px 1px 1px black;
+    margin-left: 7%;
+}
+.detailsHeading{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: darkblue;
+    font-size: 25px;
+    letter-spacing: 2px;
+      
+}
+#education{
+    height: 40vh;
+    width: 35vw;
+    background-color: white;
+    margin-left: 45vw;
+    margin-top: -40vh;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px black;
+}
+.eduHead{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+.instName{
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 25px;
+}
+.cgpa{
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 25px;
+}
+#skills{
+    height: 40vh;
+    width: 35vw;
+    background-color: white;
+    margin-left: 7%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px black;
+    margin-top: 30px;
+}
+ul{
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+li{
+    margin-top: 15px;
+}
+#cert{
+    height: 40vh;
+    width: 35vw;
+    background-color: white;
+    margin-left: 45vw;
+    margin-top: -40vh;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px black;
+    
+}
+.partCert{
+    margin-top: 25px;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#projects{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: whitesmoke; */
+}
+#projectHead{
+    font-size: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 2px;
+    margin-left: 100px;
+}
+.projectHead{
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 110px;
+    margin-top: 30px;
+}
+#javaprojectDiv1{
+    height: 33vh;
+    width: 28vw;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px black;
+    margin-top: 50px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.javaPro1{
+    font-size: 33px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+.Topics{
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: orange;
+}
+#javaprojectDiv2{
+    height: 33vh;
+    width: 28vw;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px black;
+    margin-left: 38vw;
+    margin-top: -33vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.javaPro2{
+    font-size: 33px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+#javaprojectDiv3{
+    height: 33vh;
+    width: 28vw;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px black;
+    margin-left: 68vw;
+    margin-top: -33vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.javaPro3{
+    font-size: 33px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+#javaprojectDiv1:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    
+}
+#javaprojectDiv2:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    
+}
+#javaprojectDiv3:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    
+}
+#webProjectDiv1{
+    height: 33vh;
+    width: 28vw;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px black;
+    margin-left: 100px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.webProName{
+    font-size: 33px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+#webProjectDiv2{
+    height: 33vh;
+    width: 28vw;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px black;
+    margin-left: 38vw;
+    margin-top: -33vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#webProjectDiv1:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+#webProjectDiv2:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+#webProjectDiv3{
+    height: 33vh;
+    width: 28vw;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px black;
+    margin-left: 68vw;
+    margin-top: -33vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#webProjectDiv3:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+#contactMe{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: whitesmoke; */
+}
+#contactHead{
+    font-size: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 2px;
+    margin-left: 100px;
+}
+#contactSubDiv{
+    height: 90%;
+    width: 100%;
+    background-color: transparent;
+}
+#contactSub1{
+    height: 90%;
+    width: 91.5%;
+    background-color: transparent;
+    margin-top: 40px;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    border-radius: 20px;
+    
+}
+.contactH1{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 3vw;
+    margin-top: 3vh;
+    letter-spacing: 2px;
+}
+input{
+    height: 6vh;
+    width: 60%;
+    margin-left: 3vw;
+    margin-top: 5vh;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+#button{
+    height: 7vh;
+    width: 22%;
+    margin-top: 5vh;
+    margin-left: 18vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    /* border: 2px solid black; */
+    box-shadow: 0px 0px 1px black;
+}
+#button:hover{
+    cursor: pointer;
+    background-color: orange;
+    color: black;
+}
+#contactImage1{
+    height: 50vh;
+    width: 27vw;
+    background-image: url(./PortfolioImage1.webp);
+    background-size: cover;
+    margin-left: 67%;
+    margin-top: -32%;
+    border-radius: 30px;   
+}
